@@ -1,0 +1,30 @@
+.logo {
+  font: 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+
+  margin-top: 1em;
+}
+
+
+/* stuff for 1st word */
+.logo .word1 {
+  color: #dc006c;
+  margin-right: -2em;
+  margin-left: 1em;
+  transform: rotateY(180deg);/* using Prefix free */
+  display: inline-block;/* required for transform */
+  z-index: 10;/* stack 1st word on top */
+
+  letter-spacing: -1px;
+}
+
+/* stuff for 2nd word */
+.logo .word2 {
+  z-index: 0;/* stack 2nd word below */
+  margin-left: 2em;
+  margin-right: 1em;
+  letter-spacing: -1px;
+}
+
